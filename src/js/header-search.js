@@ -1,11 +1,11 @@
-import base from "./base-url";
+// import {base} from "./base-url.js";
 import axios from 'axios';
 
 const searfchFormRef = document.querySelector('.header__search');
 const searchInputRef = document.querySelector('.header__input');
 
 async function searchFetch(name) {
-    const url = `${base}search.php?s=${name}`;
+    const url = `www.thecocktaildb.com/api/json/v1/1/search.php?s=${name}`;
     // const url = 'www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita';
     // console.log("url:", url)
     // return fetch(url)
